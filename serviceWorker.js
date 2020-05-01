@@ -24,7 +24,7 @@ const ASSETS = [
   "/images/coffee9.jpg",
 ]
 
-// const URLS = ASSETS.map((asset) => `${REPOSITORY_NAME}${asset}`);
+const URLS_2 = ASSETS.map((asset) => `${REPOSITORY_NAME}${asset}`);
 const URLS = ASSETS.map((asset) => asset);
 
 // Respond with cached resources
@@ -59,6 +59,8 @@ self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       console.log('installing cache : ' + CACHE_NAME)
+      console.log(URLS)
+      console.log(URLS_2)
       return cache.addAll(URLS)
     })
   )
