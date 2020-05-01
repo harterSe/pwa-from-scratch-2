@@ -24,8 +24,8 @@ const ASSETS = [
   "/images/coffee9.jpg",
 ]
 
-const URLS = ASSETS.map((asset) => `${REPOSITORY_NAME}${asset}`);
-// const URLS = ASSETS.map((asset) => asset);
+// const URLS = ASSETS.map((asset) => `${REPOSITORY_NAME}${asset}`);
+const URLS = ASSETS.map((asset) => asset);
 
 // Respond with cached resources
 self.addEventListener('fetch', function (e) {
