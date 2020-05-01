@@ -1,9 +1,3 @@
-const REPOSITORY_NAME = 'pwa-from-scratch-2';
-//const REPOSITORY_NAME = '';
-
-
-console.log(self)
-
 var APP_PREFIX = 'PWAfromScratch_' // Identifier for this app (this needs to be consistent across every cache update)
 var VERSION = 'V_01';              // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION;
@@ -24,9 +18,6 @@ const ASSETS = [
   "images/coffee9.jpg",
 ]
 
-const URLS_2 = ASSETS.map((asset) => `${REPOSITORY_NAME}${asset}`);
-const URLS = ASSETS.map((asset) => asset);
-
 // Respond with cached resources
 self.addEventListener('fetch', function (e) {
   console.log('fetch request : ' + e.request.url)
@@ -45,14 +36,6 @@ self.addEventListener('fetch', function (e) {
     })
   )
 })
-
-// self.addEventListener("fetch", fetchEvent => {
-//   fetchEvent.respondWith(
-//     caches.match(fetchEvent.request).then(res => {
-//       return res || fetch(fetchEvent.request);
-//     })
-//   );
-// });
 
 // Cache resources
 self.addEventListener('install', function (e) {
