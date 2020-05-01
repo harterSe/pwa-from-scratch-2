@@ -1,4 +1,6 @@
-const REPOSITORY_NAME = 'pwa-from-scratch-2'
+//const REPOSITORY_NAME = 'pwa-from-scratch-2';
+const REPOSITORY_NAME = '';
+
 
 console.log(self)
 
