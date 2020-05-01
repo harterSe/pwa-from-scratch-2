@@ -1,5 +1,5 @@
 //const REPOSITORY_NAME = 'pwa-from-scratch-2';
-const REPOSITORY_NAME = '';
+//const REPOSITORY_NAME = '';
 
 
 console.log(self)
@@ -24,7 +24,8 @@ const ASSETS = [
   "/images/coffee9.jpg",
 ]
 
-const URLS = ASSETS.map((asset) => `${REPOSITORY_NAME}/${asset}`);
+//const URLS = ASSETS.map((asset) => `${REPOSITORY_NAME}/${asset}`);
+const URLS = ASSETS.map((asset) => asset);
 
 // Respond with cached resources
 self.addEventListener('fetch', function (e) {
