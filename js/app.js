@@ -17,8 +17,12 @@ document.addEventListener("DOMContentLoaded", showCoffees)
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function () {
+    console.log(window.location)
+    const scope = window.location.pathname;
+    const swPath = `${scope}serviceWorker.js`;
+
     navigator.serviceWorker
-      .register("/pwa-from-scratch-2/serviceWorker.js", {scope: '/pwa-from-scratch-2/'})
+      .register(swPath, { scope })
       .then(res => console.log("service worker registered"))
       .catch(err => console.log("service worker not registered", err))
   })
