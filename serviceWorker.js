@@ -9,19 +9,19 @@ var VERSION = 'V_01';              // Version of the off-line cache (change this
 var CACHE_NAME = APP_PREFIX + VERSION;
 
 const ASSETS = [
-  "/",
-  "/index.html",
-  "/css/style.css",
-  "/js/app.js",
-  "/images/coffee1.jpg",
-  "/images/coffee2.jpg",
-  "/images/coffee3.jpg",
-  "/images/coffee4.jpg",
-  "/images/coffee5.jpg",
-  "/images/coffee6.jpg",
-  "/images/coffee7.jpg",
-  "/images/coffee8.jpg",
-  "/images/coffee9.jpg",
+  "",
+  "index.html",
+  "css/style.css",
+  "js/app.js",
+  "images/coffee1.jpg",
+  "images/coffee2.jpg",
+  "images/coffee3.jpg",
+  "images/coffee4.jpg",
+  "images/coffee5.jpg",
+  "images/coffee6.jpg",
+  "images/coffee7.jpg",
+  "images/coffee8.jpg",
+  "images/coffee9.jpg",
 ]
 
 const URLS_2 = ASSETS.map((asset) => `${REPOSITORY_NAME}${asset}`);
